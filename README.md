@@ -38,11 +38,11 @@
    
    
 ## 成型
-![][/readme/0.png]  
-![][readme/1.png]  
-![][readme/2.png]  
-![][readme/3.png]  
-![][readme/4.png]
+![][https://github.com/loveliu/FanTuan/blob/master/readme/0.png]  
+![][https://github.com/loveliu/FanTuan/blob/master/readme/1.png]  
+![][https://github.com/loveliu/FanTuan/blob/master/readme/2.png]  
+![][https://github.com/loveliu/FanTuan/blob/master/readme/3.png]  
+![][https://github.com/loveliu/FanTuan/blob/master/readme/4.png]
 
 
 
