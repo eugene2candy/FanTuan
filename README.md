@@ -38,7 +38,7 @@
    
    
 ## 成型
-![image](https://github.com/loveliu/FanTuan/blob/master/readme/0.png)  
+![image](readme/0.png)  
 ![image](https://github.com/loveliu/FanTuan/blob/master/readme/1.png)  
 ![image](https://github.com/loveliu/FanTuan/blob/master/readme/2.png)  
 ![image](https://github.com/loveliu/FanTuan/blob/master/readme/3.png)  
