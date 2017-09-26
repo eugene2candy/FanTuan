@@ -34,7 +34,14 @@
   
   * 5.打包类为jar包，如何打包成jar包（略），打包后参考assets/jar，也可以放在服务器，实现更新爬虫，添加爬虫。
   
+#### 字体修改
   
+  * 0.字体文件放在assets/fonts。
+  * 1.解除注释 com.anonymouser.book.bean.PaintInfo$58 。
+  * 2.修改 com.anonymouser.book.bean.PaintInfo$61 修改成字体文件路径。
+  * 3.解除注释 com.anonymouser.book.widget.BookPageFactory$61 。
+  * 4.需要实现多字体选择请自行修改代码。
+
 #### 提示
   * 内有Google analytics 和 Google adword。请自行修改。
    
