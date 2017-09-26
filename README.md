@@ -35,7 +35,8 @@
   * 5.打包类为jar包，如何打包成jar包（略），打包后参考assets/jar，也可以放在服务器，实现更新爬虫，添加爬虫。
   
   
-   
+#### 提示
+  * 内有Google analytics 和 Google adword。请自行修改。
    
 ## 成型
 ![image](https://github.com/loveliu/FanTuan/blob/master/readme/0.png)  
