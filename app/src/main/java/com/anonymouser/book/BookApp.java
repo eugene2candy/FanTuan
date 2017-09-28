@@ -14,7 +14,6 @@ import com.anonymouser.book.bean.BookContentDao;
 import com.anonymouser.book.bean.BookInfoDao;
 import com.anonymouser.book.bean.DaoMaster;
 import com.anonymouser.book.bean.PaintInfo;
-import com.anonymouser.book.bean.UserInfo;
 import com.anonymouser.book.bean.UserInfoDao;
 import com.anonymouser.book.bean.ZhuiShuBookContentDao;
 import com.github.yuweiguocn.library.greendao.MigrationHelper;
