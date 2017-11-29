@@ -4,7 +4,7 @@
 [下载应用](http://yourbuffslonnol.com)
 
 
-### 新增[百度小说源](https://github.com/loveliu/BaiduBookSuorce)
+### [百度小说源](https://github.com/loveliu/BaiduBookSuorce) 还未加入app，有空再加。
 
 ## 食用配料
 Java + Kotlin + okgo(okhttp) + RxJava + GreenDB + GreenDaoUpgradeHelper
