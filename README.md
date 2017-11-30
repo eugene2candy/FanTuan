@@ -1,6 +1,8 @@
 # 饭团小说
 开源小说阅读app，切勿用于不当用途。造成一切后果与本人无关。
 
+求个缺Android开发的团队收留 --> yzd11254@gmail.com
+
 [下载应用](http://yourbuffslonnol.com)
 
 
