@@ -324,10 +324,8 @@ class ReadActivity : BaseReadActivity() {
 
             text.setOnClickListener {
                 var link = text.tag as SearchBookInfoBean.BaseLink
-
                 mTag = link.tag
                 mBookLink = link.link
-
                 if (mBookCaseBean != null) {
                     mBookCaseBean?.useSource = mTag
                     mPresenter.updateBookCaseBook(mBookCaseBean!!)
@@ -339,13 +337,9 @@ class ReadActivity : BaseReadActivity() {
                     startActivity(ReadActivity.newInstance(this, mSearchBookInfoBean!!))
                 }
                 finish()
-
                 windown.dismiss()
             }
-
         }
-
-
         windown.show()
     }
 

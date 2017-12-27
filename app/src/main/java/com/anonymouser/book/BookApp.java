@@ -80,7 +80,6 @@ public class BookApp extends MultiDexApplication {
                     .putBoolean("isFirst", false)
                     .commit();
         }
-
     }
 
     /* 初始化okgo */

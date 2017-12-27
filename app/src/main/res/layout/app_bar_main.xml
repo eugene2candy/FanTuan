@@ -90,14 +90,6 @@
             android:layout_weight="1"
             android:background="#F2F2F2" />
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-4056171202072236/3255029948" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -107,7 +99,7 @@
         android:background="#fff"
         android:gravity="center"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="160dp"

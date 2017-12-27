@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "739731200723",
+    "project_id": "firebase-novelcode"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739731200723:android:febc41ea4b50d0a8",
+        "android_client_info": {
+          "package_name": "com.anonymouser.book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739731200723-4a61fjnv3recjbbgutkoghja44sf2nom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKCHin9eGBh9GXJXEwcGV8EaxJmVr6amw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-103576212-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

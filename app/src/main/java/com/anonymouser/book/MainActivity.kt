@@ -4,11 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.anonymouser.book.view.HomeActivity
-import com.anonymouser.book.view.SearchActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.analytics.HitBuilders
-//import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * 保留第一屏

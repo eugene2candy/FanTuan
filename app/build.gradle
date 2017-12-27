@@ -75,8 +75,6 @@ dependencies {
     compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
     //google 统计
     compile 'com.google.android.gms:play-services-analytics:11.0.1'
-    //google ad
-    compile 'com.google.android.gms:play-services-ads:11.0.1'
     //右滑返回
     compile 'com.aitangba:swipeback:1.0.1'
     //seekbar

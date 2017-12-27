@@ -26,6 +26,8 @@ import com.anonymouser.book.widget.PagerView
 import com.xw.repo.BubbleSeekBar
 import kotlinx.android.synthetic.main.activity_read.*
 import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
 
 /**
  *  使用追书神器的API，打开的activity
@@ -186,15 +188,11 @@ class ReadZhuiShuActivity : BaseReadActivity() {
 
             override fun getMiddleChapter(): ChapterBean? {
                 mThisNullLink = mPresenter.getChapterLink(mBookIndex)
-
                 var bean = mPresenter.getBookContent(mBookIndex)
-
                 if (!TextUtils.isEmpty(bean?.content)) {
                     mThisNullLink = ""
                     setLoadingView(false)
                 }
-
-
                 return bean
             }
 
@@ -340,6 +338,7 @@ class ReadZhuiShuActivity : BaseReadActivity() {
     var mErrorCacheDialog: SweetAlertDialog? = null
 
     //后台缓存章节成功回调事件
+    @Subscribe(threadMode = ThreadMode.MAIN)
     override fun cacheSuccessEvent(content: ZhuiShuBookContent) {
         if (!TextUtils.isEmpty(mPreNullLink)) {
             if (TextUtils.equals(content.link, mPreNullLink)) {

@@ -22,8 +22,6 @@ import com.anonymouser.book.event.SaveIsShowAdInfo
 import com.anonymouser.book.presenter.HomePresenter
 import com.anonymouser.book.service.DownloadService
 import com.anonymouser.book.utlis.AppUpdate
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
 import com.ogaclejapan.smarttablayout.SmartTabLayout
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems
@@ -60,10 +58,6 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         setContentView(R.layout.activity_home)
-
-        var isShowAd = getSharedPreferences("info", Context.MODE_PRIVATE).getBoolean("isShowAd", false)
-        setAd(isShowAd)
-
         mHandler.sendEmptyMessageDelayed(HIDE_FIRST_LOGO, 2000)
 
         mPresenter.initJar()
@@ -96,25 +90,6 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             drawerLayout.openDrawer(GravityCompat.START)
         }
     }
-
-    //广告
-    private fun setAd(isShow: Boolean) {
-        if (isShow) {
-            adView.visibility = View.VISIBLE
-            initAd()
-        }
-    }
-
-    private fun initAd() {
-        MobileAds.initialize(this,
-                "ca-app-pub-4056171202072236~1111727117")
-        val adRequest = AdRequest.Builder()
-                .addTestDevice("E5E57FE6FD8C4CD72F2B6139CC6E2559")
-                .addTestDevice("0A10D03C334A9A5FC7569247EC470258")
-                .build()
-        adView.loadAd(adRequest)
-    }
-
 
     override fun onResume() {
         super.onResume()
