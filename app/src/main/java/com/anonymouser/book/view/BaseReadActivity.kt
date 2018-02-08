@@ -1,5 +1,6 @@
 package com.anonymouser.book.view
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -74,7 +75,8 @@ abstract class BaseReadActivity : Activity() {
 
     /* GA每次会话持续时间5分钟，每隔5分钟需要提交一次会话 */
     var sendReadingGADelay = 1000 * 60 * 5L
-    var mHandler = object : Handler() {
+    var mHandler = @SuppressLint("HandlerLeak")
+    object : Handler() {
         override fun handleMessage(msg: Message?) {
             if (msg?.what == SEND_READING_GA) {
                 val tracker = (application as BookApp).defaultTracker
@@ -118,6 +120,16 @@ abstract class BaseReadActivity : Activity() {
         super.onPause()
         mHandler.removeMessages(SEND_READING_GA)
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        //反注册电量改变接收者
+        unregisterReceiver(mPowerReceiver);
+
+        EventBus.getDefault().unregister(this@BaseReadActivity)
+    }
+
 
     /* 设置 google analytics */
     private fun setGA() {
@@ -191,6 +203,7 @@ abstract class BaseReadActivity : Activity() {
     /* 点击底部 目录 按钮 */
     fun onDirectory(view: View) {
         hiddenWeight()
+
         directory.visibility = View.VISIBLE
         directory.startAnimation(mShowLeftAction)
 

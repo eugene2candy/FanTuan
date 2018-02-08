@@ -74,7 +74,6 @@ public class CategoryFragment extends LazyFragment {
             }
         });
 
-
         getCategory();
     }
 

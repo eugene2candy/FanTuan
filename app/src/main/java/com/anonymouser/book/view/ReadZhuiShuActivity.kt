@@ -34,7 +34,6 @@ import org.greenrobot.eventbus.ThreadMode
  */
 class ReadZhuiShuActivity : BaseReadActivity() {
 
-
     var mPresenter = ReadZhuiShuPresenter(this)
     var mTag = ""           //第三方书本的tag 如biquw
         set(value) {
@@ -90,7 +89,6 @@ class ReadZhuiShuActivity : BaseReadActivity() {
             mBookId = mSearchBookInfoBean?.id ?: ""
             mTag = mSearchBookInfoBean?.tag ?: ""
         }
-
 
         topBookName.text = mBookName
 

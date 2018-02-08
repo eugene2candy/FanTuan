@@ -30,7 +30,6 @@ public class TestActivity extends Activity {
 
 //        ImageView iv = (ImageView) findViewById(R.id.iv);
 //        ImgLoad.baseLoadImg("http://qidian.qpic.cn/qdbimg/349573/1004174819/180");
-
     }
 
     @Override
